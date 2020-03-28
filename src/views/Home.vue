@@ -86,6 +86,7 @@ export default {
     },
 
     handleError (err) {
+      // eslint-disable-next-line no-console
       console.error('Oops...', err)
       this.isLoading = false
     },
