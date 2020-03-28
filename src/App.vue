@@ -1,18 +1,33 @@
 <template lang="pug">
   #app
-    #nav
-      router-link(to="/") Home
-      span &nbsp;|&nbsp;
-      router-link(to="/about") About
+    Navigation
+
     router-view
 </template>
 
+<script>
+import Navigation from './components/Navigation'
+
+export default {
+  name: 'App',
+
+  components: {
+    Navigation
+  }
+}
+</script>
 <style lang="stylus">
+html, body
+  margin 0
+  padding 0
+
 #app
-  font-family Avenir, Helvetica, Arial, sans-serif
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-align center
   color #2c3e50
-  margin-top 60px
+  display grid
+  font-family Avenir, Helvetica, Arial, sans-serif
+  grid-column-gap 5vw
+  grid-template-columns 250px auto
+  max-width 1024px
+  min-height 100vh
+  text-align left
 </style>
