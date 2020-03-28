@@ -73,7 +73,6 @@ export default {
     fetchForecastByCoords ({ coords }) {
       const { latitude, longitude } = coords
       this.isLoading = true
-
       getForecastByCoords(latitude, longitude)
         .then(this.handleSuccess)
         .catch(this.handleError)
@@ -81,13 +80,13 @@ export default {
 
     getCoords () {
       if (navigator.geolocation && !this.city) {
-        navigator.geolocation.getCurrentPosition(this.fetchForecastByCoords)
+        navigator.geolocation.getCurrentPosition(this.fetchForecastByCoords, this.handleError)
       }
     },
 
     handleError (err) {
       // eslint-disable-next-line no-console
-      console.error('Oops...', err)
+      console.warn('Oops...', err)
       this.isLoading = false
     },
 
