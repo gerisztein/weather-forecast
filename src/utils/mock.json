@@ -1,0 +1,62 @@
+[
+    {
+      "id": 1,
+      "label": "Barcelona"
+    },
+    {
+      "id": 2,
+      "label": "Beijing"
+    },
+    {
+      "id": 3,
+      "label": "Belo Horizonte"
+    },
+    {
+      "id": 4,
+      "label": "Berlin"
+    },
+    {
+      "id": 5,
+      "label": "Copenhagen"
+    },
+    {
+      "id": 6,
+      "label": "Lisbon"
+    },
+    {
+      "id": 7,
+      "label": "London"
+    },
+    {
+      "id": 8,
+      "label": "Naples"
+    },
+    {
+      "id": 9,
+      "label": "New York"
+    },
+    {
+      "id": 10,
+      "label": "Oslo"
+    },
+    {
+      "id": 11,
+      "label": "Rio de Janeiro"
+    },
+    {
+      "id": 12,
+      "label": "São Paulo"
+    },
+    {
+      "id": 13,
+      "label": "Stockholm"
+    },
+    {
+      "id": 14,
+      "label": "Tokyo"
+    },
+    {
+      "id": 15,
+      "label": "Turin"
+    }
+  ]
