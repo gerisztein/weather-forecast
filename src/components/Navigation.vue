@@ -74,11 +74,11 @@ export default {
 
   &-list
     h1
-      border-bottom 10px solid #efefef
+      border-bottom 5px solid #efefef
       display inline-block
       font-size 2rem
       margin-bottom 32px
-      padding 0 24px 0 6px
+      padding 0 48px 0 12px
 
     ul
       list-style none
@@ -88,7 +88,7 @@ export default {
 
     li
       cursor pointer
-      padding 0 0 4px 12px
+      padding 0 0 4px 16px
 
       a
         &:link, &:visited
