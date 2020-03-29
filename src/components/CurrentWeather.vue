@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import { formatTemperature } from '@/utils'
+import { formatTemperature, getIconUrl } from '@/utils'
 
 export default {
   name: 'CurrentWeather',
@@ -74,7 +74,7 @@ export default {
 
   data () {
     return {
-      iconUrl: `http://openweathermap.org/img/wn/${this.icon}@2x.png`,
+      iconUrl: getIconUrl(this.icon),
       realFeelTemperature: formatTemperature(this.realFeel),
       location: `${this.city}, ${this.country}`,
       maxTemperature: formatTemperature(this.minTemp),

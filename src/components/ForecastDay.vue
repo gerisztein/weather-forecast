@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import { formatTemperature, getWeekday } from '@/utils'
+import { formatTemperature, getIconUrl, getWeekday } from '@/utils'
 
 export default {
   name: 'Forecast',
@@ -58,7 +58,7 @@ export default {
 
   data () {
     return {
-      iconUrl: `http://openweathermap.org/img/wn/${this.icon}@2x.png`,
+      iconUrl: getIconUrl(this.icon),
       maxTemperature: formatTemperature(this.maxTemp),
       minTemperature: formatTemperature(this.minTemp),
       temperature: formatTemperature(this.temp),

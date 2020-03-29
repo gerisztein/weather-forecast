@@ -15,5 +15,7 @@ export const filterData = ({ data }) => {
 
 export const formatTemperature = (temperature) => `${Math.round(temperature)}°`
 
+export const getIconUrl = (icon) => `//openweathermap.org/img/wn/${icon}@2x.png`
+
 export const getWeekday = (date, locale = 'en-US') => new Date(date)
   .toLocaleDateString(locale, { weekday: 'short' })
