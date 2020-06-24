@@ -7,17 +7,14 @@
       type="text"
       size="32"
     )
-
     datalist#cities
       option(
         v-for="city in cities"
         :key="city.id"
         v-text="city.label"
       )
-
     .Navigation-list
       h1 Cities
-
       ul(v-if="cityList.length")
         li
           router-link(to="/") Current location
@@ -29,7 +26,6 @@
             :to="{ name: 'Home', query: { city: city.label }}"
             v-text="city.label"
           )
-
       p(v-else) No cities found.
 </template>
 
