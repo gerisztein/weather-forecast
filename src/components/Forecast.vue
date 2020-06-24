@@ -1,7 +1,6 @@
 <template lang="pug">
   .Forecast
     h1.Forecast-title Next 3 days
-
     .Forecast-container
       ForecastDay(
         v-for="day in forecast"
